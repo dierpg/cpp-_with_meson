@@ -37,8 +37,36 @@ If you encounter troubles in your installation your encouraged to read the outpu
 
 # Our first program
 
-In a folder separate from the one used for this
+In this folder create a new folder called test (this folder will be ignored by git), inside it create a file called main.cpp (it is customary for the main entry point of a c++ program to be called main), source code for cpp programs is found in files with the following extensions .cpp and .hpp the second refering to header files which we will talk about briefly, for now write the following onto the file
+```cpp
+#include <iostream>
+
+int main(){
+	std::cout << "Hello world";
+	return 0;
+}
+```
+Following this execute the following on your terminal
+```bash
+g++ main.cpp -o main
+ls -lah
+```
+You will notice that a new file is inside your folder which is the binary executable that corresponds to the program,
+also pay attention to the first column the letters correspond to the type of operations that can be perfomed on the file
+you can find more about this in  here [[2]](2)
+Now type the following in your terminal.
+```bash
+./main
+```
+You should get the following output "Hello world", notice that the first line has the following ```#include <iostream>``` with this we are telling
+our program to call the header iostream from the c++ standard library.
+
+# Linking our first custom header.
+
 ## References
 <a id="1">[1]</a>
 Philllip A. Laplante
-Enciclopedia of Computer Science and Technology Second Edition Volume I.
+Enciclopedia of Computer Science and Technology Second Edition Volume I, p233.
+
+<a id="2">[2]</a>
+https://www.guru99.com/file-permissions.html .
