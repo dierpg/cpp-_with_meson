@@ -1,4 +1,5 @@
 # Workflow in a compiled language
+
 C++ is a statically typed strong compiled high level language, if your new to computer programming this all sounds like jargon so what does all of this mean?
 
 In this course you will find answers to this question and much more, lets start with high level what this means is that the language is independent from the computer architecture its run
@@ -17,4 +18,27 @@ graph TD;
 		fix_errors-->compile_code;
 ```
 
-For this to be possible a number of software tools are required
+For this to be possible a number of software tools are required, for purposes of this section we will concern ourselves with the compiler and the linker.
+
+# What is a compiler
+
+According to Laplante "he compiler bridges the semantic gap between the
+high-level program that the user requires to be executed
+and the low-level instructions that a computer can understand" [[1]](1) in other words the compiler translates to a lower level language which in this case is specific to a specified architecture (x86 for our purposes), a linker concerns itself with linking the different files that are used by our program (more or less). For simplicity the compiler that we will be using is the GCC compiler.
+
+# Setting up gcc.
+
+Asuming your using ubuntu (as it is a requirement), you want to execute the following commands in order:
+```bash
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install gcc g++
+```
+If you encounter troubles in your installation your encouraged to read the output of the shell, as it will give you hints should this not work.
+
+# Our first program
+
+In a folder separate from the one used for this
+## References
+<a id="1">[1]</a>
+Philllip A. Laplante
+Enciclopedia of Computer Science and Technology Second Edition Volume I.
