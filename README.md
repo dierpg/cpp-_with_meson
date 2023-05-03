@@ -1,10 +1,14 @@
 # README
-This repository contains a series of exercises and documentation, with the purpose
-of helping in the process of learning the cpp language using the MESON build system.
+
+Este repositorio contiene una serie de ejercicios y documentacion, que tiene el propoosito
+de ayudar a aprender el lenguaje de programacion cpp(c++ se pronuncia c plus plus) usando
+el sistema de construccion meson.
 
 # Software requirements.
-If you wish to use this repository with the purpose of learning cpp
-it is recommended to have an x86 computer with ubuntu 20.04, also use of visual studio code is recommended as it makes it easier to look at the figures and charts with the following extensions:
+Si desea utilizar este repositorio se recomienda tener una computadora que soporte el
+conjunto de instrucciones x86 (la mayoria de procesadores amd y intel) con ubuntu 20.04,
+visual stuio code es recomendado dado que hace mas sencilla la vizualisacion de las
+ilustraciones dentro de este repositorio. Debe instalar las siguientes extensiones:
 
 ```
 Name: Markdown Preview Mermaid Support
