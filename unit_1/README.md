@@ -1,12 +1,11 @@
 # Flujo de trabajo en un lenguaje compilado
 
-C++ es un lenguaje de alto nivel, compilado de tipado estatico fuerte, si estas comenzando en las ciencias de la computacion todo
-esto te puede sonar como palabreria asi que ¿que significa realmente todo esto?.
+C++ es un lenguaje de alto nivel, compilado de tipado estatico fuerte, si estas comenzando en las ciencias de la computacion todo esto te puede sonar como palabreria asi que ¿que significa realmente todo esto?.
 
 En este curso encontrara la respuesta a esta pregunta y muchas otras cosa, empecemos con alto nivel lo que esteo significa es que el lenguaje
 es independiente de la arquitectura del computador en el que se ejecute.
 
-Para generar un ejecutable hay una serie de pasos y software que es requerido, en terminos general el proceso es el siguiente:
+Para generar un ejecutable hay una serie de pasos y software que es requerido, en terminos generales el proceso es el siguiente:
 
 ```mermaid
 graph TD;
@@ -27,8 +26,8 @@ hablaremos del linker y el compilador.
 Segun laplante "The compiler bridges the semantic gap between the
 high-level program that the user requires to be executed
 and the low-level instructions that a computer can understand" [[1]](1) en otras palabras el compilador
-"traduce" el codigo a uina arquitectura especifica (que en este caso es x86), el compilador a utilizar en este curso es gcc.
-s
+"traduce" el codigo a una arquitectura especifica (que en este caso es x86), el compilador a utilizar en este curso es gcc.
+
 # Instalando gcc
 
 Asumiendo que se esta usando ubuntu (es un requisito), se deben ejecutar los siguientes comandos en la terminal en orden.
