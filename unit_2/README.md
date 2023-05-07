@@ -4,8 +4,8 @@ Sin embargo, hemos de notar que al crear programas se deben dividir sus distinto
 a veces esto toma decenas, cientos e incluso miles de archivos dependiendo del tamaño del proyecto que se desarrolle.
 
 Debido a esto, el método de poner el nombre de cada archivo utilizado en una línea de comandos, es poco práctico en la mayoría
-de las situaciones, es aquí donde entra otra herramienta de software para solucionar este problema, el sistema de construccíon o
-build system en ingles.
+de las situaciones, es aquí donde entra otra herramienta de software para solucionar este problema, el sistema de construcción o
+build system en inglés.
 
 Para los propósitos de este curso se usará meson. A continuación, se describirá el proceso por el cual se establece lo que en
 jerga de programadores se conoce como un ambiente de desarrollo.
@@ -31,7 +31,7 @@ Inserte los siguientes comandos en la terminal
 sudo apt install build-essential
 sudo apt install meson ninja-build
 ```
-Con esto meson ya esta instalado, ahora vamor a utilizar el codigo de la seccion anterior, dentro de la carpeta test cree un archivo con el siguiente nombre meson.build, en el debe agregar lo siguiente:
+Con esto meson ya esta instalado, ahora vamos a utilizar el código de la sección anterior, dentro de la carpeta test cree un archivo con el siguiente nombre meson.build, en el debe agregar lo siguiente:
 ```meson
 # project keyword
 project('test', 'cpp',
@@ -42,12 +42,12 @@ project('test', 'cpp',
 exe = executable('main', 'main.cpp', 'myheader.hpp',
   install : true)
 ```
-Note que el archivo comienza con la palabra project (para denotar el proyecto sobre el que se esta trabajando), la palabra despues de la segunda coma denota el lenguaje que se esta usando en este caso cpp, version denota la version de nuestro programa y default_options establece las flags que se pasan al compilador.
+Note que el archivo comienza con la palabra project (para denotar el proyecto sobre el que se esta trabajando), la palabra después de la segunda coma, denota el lenguaje que se esta usando, en este caso cpp, version denota la versión de nuestro programa y default_options establece las flags que se pasan al compilador.
 
-Exe lo usamos para denotar el tipo de programa a compilar note que en esta seccion añadimos main
+Exe lo usamos para denotar el tipo de programa a compilar, note que en esta sección añadimos main
 como el nombre del ejecutable a producir al final del proceso.
 
-Ahora necesitamos de una serie de comandos para producir el ejecutable, dentro de la carpeta test de la unidad 1 ejecute lo siguiente
+Ahora necesitamos de una serie de comandos para producir el ejecutable, dentro de la carpeta test de la unidad 1 ejecute lo siguiente:
 
 ```bash
 meson setup builddir
@@ -67,12 +67,12 @@ Error executing command as another user: Not authorized
 
 This incident has been reported.
 ```
-Esto es normal no se preocupe el archivo ejecutable fue creado dentro de la carpeta builddir pero lo que esta notificacion esta dando a entender es que se intento hacer una copia del ejecutable en la carpeta /usr/local/bin que es la opcion por default donde se colocan los archivos al "instalar", esto se puede cambiar a conveniencia para mas informacion se puede consultar [1](1) ahora si ejecuta el archivo debera obtener:
+Esto es normal, no se preocupe, el archivo ejecutable fue creado dentro de la carpeta builddir pero lo que esta notificación está dando a entender, es que se intento hacer una copia del ejecutable en la carpeta /usr/local/bin que es la opción por default donde se colocan los archivos al "instalar", esto se puede cambiar a conveniencia para más informacián se puede consultar [1](1), ahora sí ejecuta el archivo deberá obtener:
 ```
 Hello world
 Hello me
 ```
-Si bien se añaden pasos extra en el proceso de creacion de un ejecutable, se debe destacar que el utilizar un sistema de construccion ayuda en la organizacion y automatizacion del proceso de desarrollo de software, dado que permite expresar la manera en la que se espera que se replique el software de una manera en la que todos los participantes del proceso son capaces de volver a aplicar los mismos pasos y pueden ser guiados mediante la documentacion del sistema en particular.
+Sí bien se añaden pasos extra en el proceso de creación de un ejecutable, se debe destacar que el utilizar un sistema de construcción ayuda en la organización y automatización del proceso de desarrollo de software, dado que permite expresar la manera en la que se espera que se replique el software, de una manera en la que todos los participantes del proceso son capaces de volver a aplicar los mismos pasos y pueden ser guiados mediante la documentación del sistema en particular.
 
 ## Referencias
 <a id="1">[1]</a>
