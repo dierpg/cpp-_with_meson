@@ -74,6 +74,8 @@ Hello me
 ```
 Sí bien se añaden pasos extra en el proceso de creación de un ejecutable, se debe destacar que el utilizar un sistema de construcción ayuda en la organización y automatización del proceso de desarrollo de software, dado que permite expresar la manera en la que se espera que se replique el software, de una manera en la que todos los participantes del proceso son capaces de volver a aplicar los mismos pasos y pueden ser guiados mediante la documentación del sistema en particular.
 
+
+
 ## Referencias
 <a id="1">[1]</a>
 https://mesonbuild.com/Installing.html
