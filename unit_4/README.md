@@ -19,17 +19,97 @@ esta dada por palabras especiales que examineramos a continuacion.
 
 ## if
 
+Considere el siguiente codigo:
+
+```cpp
+
+#include <iostream>
+
+int main(){
+	bool flag = false;
+
+	if(flag){
+		std::cout << "Me ejecuto cuando flag es verdadero." << std::endl;
+	}
+	return 0;
+}
+
+```
+
+
+
+
 ## if/else
 
+```cpp
+
+#include <iostream>
+#include <string>
+
+int main(){
+
+	return 0;
+}
+
+```
+
 ## switch
+
+```cpp
+
+#include <iostream>
+#include <string>
+
+int main(){
+
+	return 0;
+}
+
+```
 
 # Estructuras de repeticion
 
 ## for
 
+```cpp
+
+#include <iostream>
+#include <string>
+
+int main(){
+
+	return 0;
+}
+
+```
+
 ## while
 
+```cpp
+
+#include <iostream>
+#include <string>
+
+int main(){
+
+	return 0;
+}
+
+```
+
 ## do while
+
+```cpp
+
+#include <iostream>
+#include <string>
+
+int main(){
+
+	return 0;
+}
+
+```
 
 # Referencias
 
