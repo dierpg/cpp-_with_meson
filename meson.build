@@ -23,3 +23,5 @@ if get_option('build_tests')
 	gmock_dep = gtest_proj.get_variable('gmock_dep')
   subdir('tests')
 endif
+
+subdir('unit_4')
