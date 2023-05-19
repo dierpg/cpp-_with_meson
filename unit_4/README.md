@@ -85,7 +85,7 @@ graph TD;
 Esta sintaxis es la habitual sin embargo existen los conocidos como operadores
 ternarios que cumplen una funcion similar al if pero se usan en la asignacion
 de valores a una variable, antes de mostrar un ejemplo de esto se presentaran
-algunos de los operadores necesarios para construir expresiones logicas (una descripcion exhaustiva de los operadores disponibles para expresiones logicas puede ser consultado en [[2]](2))
+algunos de los operadores necesarios para construir expresiones logicas (una descripcion exhaustiva de los operadores disponibles para expresiones logicas puede ser consultado en [[2]](2) y  [[3]](3))
 
 ### Operadores para expresiones logicas
 
@@ -146,6 +146,7 @@ Me ejecuto cuando flag es falso.
 ```
 
 ### Operadores ternarios
+
 
 
 
@@ -214,5 +215,8 @@ int main(){
 Philllip A. Laplante
 Enciclopedia of Computer Science and Technology Second Edition Volume II, p110.
 
-<a id="1">[2]</a>
+<a id="2">[2]</a>
 https://www.cs.fsu.edu/~myers/c++/notes/control1.html
+
+<a id="3">[3]</a>
+https://en.cppreference.com/w/cpp/language/expressions
