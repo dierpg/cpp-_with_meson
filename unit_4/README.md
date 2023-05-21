@@ -223,20 +223,44 @@ recalcar que si se hace uso de switch este debe incluir el
 caso default.
 
 # Estructuras de repeticion
-
+Las tres estructuras basicas de repeticion en cpp
+son el for, while y do while se empezara por el for.
 ## for
-
+El for loop permite realizar la misma instruccion una cantidad n
+de veces, para esta estructura se cuenta con las siguientes variables
+que controlan el ```estado``` de la iteracion:
+```
+expresion inicial
+condicion de finalizacion
+expresion de actualizacion
+```
+A continuacion se presenta un ejemplo basico de esta estructura
 ```cpp
 
 #include <iostream>
 #include <string>
 
 int main(){
-
+	int forLimit = 5;
+	// int i = 0 corresponde a nuestra expresion inicial
+	// i < forLimit corresponde a la condicion de finalizacion
+	// i++ corresponde a la expresion de actualizacion
+	for(int i = 0; i<forLimit; i++){
+		std::cout << i << std::endl;
+	}
 	return 0;
 }
 
 ```
+La salida de este codigo es la siguiente:
+```bash
+0
+1
+2
+3
+4
+```
+
 
 ## while
 
