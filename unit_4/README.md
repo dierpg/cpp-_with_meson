@@ -147,12 +147,34 @@ Me ejecuto cuando flag es falso.
 
 ### Operadores ternarios
 
+El operador ternario es similar al if/else anteriormente expuesto,
+a continuacion se presenta un ejemplo de su uso.
 
+```cpp
+#include <iostream>
+#include <string>
+int main(){
 
+	std::string message;
+	bool flag = true;
+	flag ? message = "verdadero" : message = "falso";
+	std::cout << message << std::endl;
+	return 0;
+}
+```
 
+La salida del siguiente codigo seria la siguiente:
+```bash
+verdadero
+```
+Como se aprecia en el ejemplo los casos de la condicional se separan
+por el caracter ':' y el codigo ejecutara la condicion de la izquierda
+si la condicion logica expuesta es verdadera, de otro modo se procedera
+con el codigo a la derecha.
 
 ## switch
-
+La estructura de control switch es utilizada cuando es necesario evaluar
+una lista de posibles casos como se muestra a continuacion:
 ```cpp
 
 #include <iostream>
@@ -160,10 +182,45 @@ Me ejecuto cuando flag es falso.
 
 int main(){
 
+	std::string message;
+
+	int arg = 0;
+
+	switch(arg){
+		case 1:
+			message = "1";
+			break;
+		case 2:
+			message = "2";
+			break;
+		default:
+			message = "default";
+	}
+	std::cout << message << std::endl;
 	return 0;
 }
+```
+El siguiente diagrama detalla los posibles resultados
+segun el valor de 'arg':
+
+
+```mermaid
+graph TD;
+    condiciones-->arg_igual_a_1;
+		condiciones-->arg_igual_a_2;
+		condiciones-->arg_distinto_a_casos;
+		arg_igual_a_1-->message_igual_a_1;
+		arg_igual_a_2-->message_igual_a_2;
+		arg_distinto_a_casos-->message_igual_a_default;
 
 ```
+Note en la sintaxis la presencia de la palabra ```break```
+esta interrumpe la ejecucion al llegar a esa linea en particular
+del switch y sale de la ejecucion de los corchetes, esto es
+importante dado que de otro modo no importaria el valor de arg
+siempre se ejecutaria el caso ```default``` tambien se debe
+recalcar que si se hace uso de switch este debe incluir el
+caso default.
 
 # Estructuras de repeticion
 
