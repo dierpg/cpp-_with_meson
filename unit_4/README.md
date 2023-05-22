@@ -261,22 +261,46 @@ La salida de este codigo es la siguiente:
 4
 ```
 
-
 ## while
+El while posee una condicion logica que establece si se ejecuta o no,
+tome como ejemplo el siguiente codigo note que la condicion es que
+conditionArg sea igual a 5.
 
 ```cpp
-
 #include <iostream>
 #include <string>
 
 int main(){
+	int conditionArg = 5;
+	// Dato a cambiar dentro del while
+	int i = 0;
 
+	while(conditionArg==5){
+		std::cout << i << std::endl;
+		i++;
+		if(i==6){
+			conditionArg--;
+		}
+	}
+	std::cout << conditionArg << std::endl;
 	return 0;
 }
-
 ```
+En este caso el codigo desplegara los numeros enteros del 0 al 6,
+y cuando este llegue a 6 saldra del while para desplegar 4.
+Note que si el valor de i no incrementara despues de mostrar su valor
+actual el codigo seguiria ejecutandose sin parar, otro aspecto a tomar
+en cuenta es que los while son estructuras de repeticion dependientes
+de la condicion logica usada en el caso de que esta no sea cierta
+el codigo dentro de este no se ejecutara.
 
 ## do while
+La estructura do while es usada cuando necesitamos al menos
+una ejecucion de las instrucciones y no sabemos si la condicion
+logica descrita se cumple o no. El do while ejecutara el codigo
+y despues de su primera ejecucion verificara el valor de verdad
+de la condicion, si este es verdadero continuara con otra iteracion
+hasta que su condicion sea falsa.
 
 ```cpp
 
@@ -284,11 +308,43 @@ int main(){
 #include <string>
 
 int main(){
-
+	int conditionArg = 0;
+	do{
+		std::cout << "Evaluando condicion" << std::endl;
+		if(conditionArg==5){
+			std::cout << "Condicion falsa." << std::endl;
+		}
+		std::cout << "Condicion cierta." << std::endl;
+		// incremento de conditionArg
+		conditionArg++;
+	}while(conditionArg!=5);
+	std::cout << conditionArg << std::endl;
 	return 0;
 }
-
 ```
+La salida del codigo seria la siguiente:
+
+```bash
+Evaluando condicion
+Condicion cierta.
+Evaluando condicion
+Condicion cierta.
+Evaluando condicion
+Condicion cierta.
+Evaluando condicion
+Condicion cierta.
+Evaluando condicion
+Condicion cierta.
+5
+```
+
+# Comentarios finales.
+
+En esta seccion no se examino el comportamiento de
+palabras designadas del lenguaje cpp para interrumpir
+el comportamiento de las estructuras de repeticion,
+en particular ```continue``` y ```break``` se recomienda
+al lector estudiar esto por su cuenta.
 
 # Referencias
 
