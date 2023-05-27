@@ -43,19 +43,45 @@ en el se debe hacer uso de la siguiente sintaxis
 ejemplo::funcion_a_llamar
 
 ```
-Esta notacion recibe el nombre de ```namespace scope``` [[1]](1),
-
-
-
-
+Esta notacion recibe el nombre de ```namespace scope``` [[1]](1).
 
 
 # Sintaxis basica
 
+La estructura para declarar una funcion en cpp
+es ```tipo de retorno``` ```nombre de funcion```
+```argumentos dentro de parentesis``` a
+continuacion se presenta un ejemplo de funcion
+que no retorna ningun valor.
 
 ```cpp
+#include <iostream>
 
+namespace ejemplo {
+	void helloWorld(){
+    std::cout << "Hello World!" << std::endl;
+    return;
+	}
+}
 ```
+En este caso nuestro tipo de retorno es ```void```
+lo que quiere decir que la funcion no retorna ningun
+valor. Note que esta funcion no posee ningun argumento,
+a continuacion se presenta un ejemplo de una funcion que
+toma dos argumentos y retorna un argumento, asuma que la
+funcion anterior se encuentra en el ```namespace```
+ejemplo:
+
+```cpp
+int suma(int a, int b){
+	return a + b;
+}
+```
+
+# Sobrecarga de funciones
+
+
+
 
 
 # Referencias
