@@ -1,6 +1,6 @@
 # Estructuras de control
 
-En terminos generales cuando un programa se ejecuta se busca realizar
+En términos generales cuando un programa se ejecuta se busca realizar
 una serie de ```instrucciones``` en un orden particular, esto en la
 literatura recibe el nombre de ```algoritmo``` si el lector esta interesado
 un tratamiento formal del tema puede ser encontrado en [[1]](1).
