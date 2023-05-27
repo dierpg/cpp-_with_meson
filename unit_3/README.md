@@ -81,7 +81,7 @@ int main(){
 	return 0;
 }
 ```
-La salida esperada para este código es la siguiente:\
+La salida esperada para este código es la siguiente:
 
 ```bash
 Mi dato es: 20

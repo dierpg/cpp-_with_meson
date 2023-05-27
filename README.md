@@ -1,6 +1,6 @@
 # README
 
-Este repositorio contiene una serie de ejercicios y documentacion, que tiene el propoosito
+Este repositorio contiene una serie de ejercicios y documentacion, que tiene el proposito
 de ayudar a aprender el lenguaje de programacion cpp(c++ se pronuncia c plus plus) usando
 el sistema de construccion meson.
 
