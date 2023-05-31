@@ -2,24 +2,24 @@
 
 En términos generales cuando un programa se ejecuta se busca realizar
 una serie de ```instrucciones``` en un orden particular, esto en la
-literatura recibe el nombre de ```algoritmo``` si el lector esta interesado
+literatura recibe el nombre de ```algoritmo```, sí el lector esta interesado
 un tratamiento formal del tema puede ser encontrado en [[1]](1).
 
-Esta unidad describira lo que se conoce como estructuras de control,
-estas son una pieza fundamental en la implementacion de los algoritmos
-para cualquier lenguaje de programacion.
+Esta unidad describirá lo que se conoce como estructuras de control,
+estas son una pieza fundamental en la implementación de los algoritmos
+para cualquier lenguaje de programación.
 
 # Tipos de estructuras de control
 
 Los tipos de estructuras de control pueden ser divididas en dos tipos
-```seleccion``` y ```repeticion``` su representacion en el lenguaje
+```selección``` y ```repetición```, su representación en el lenguaje
 esta dada por palabras especiales que examineramos a continuacion.
 
-# Estructuras de seleccion
+# Estructuras de selección
 
 ## if
 
-Considere el siguiente codigo:
+Considere el siguiente código:
 
 ```cpp
 
@@ -35,14 +35,14 @@ int main(){
 }
 
 ```
-Este codigo no despliega ningun valor sin embargo si el valor de flag
+Este código no despliega ningun valor, sin embargo si el valor de flag
 pasa de falso a verdadero su salida es la siguiente:
 
 ```bash
 Me ejecuto cuando flag es verdadero.
 ```
-El if recibe el nombre de condicional y mueve la ejecucion al contexto definido
-entre los corchetes si la condicion entre sus parentesis.
+El condicional if recibe el nombre de condicional y mueve la ejecución al contexto definido
+entre los corchetes, sí la condición entre sus paréntesis.
 
 ```mermaid
 graph TD;
@@ -53,7 +53,7 @@ graph TD;
 ```
 
 ## if/else
-El if posee una version extendida que se presenta a continuacion:
+El condicional if posee una versión extendida que se presenta a continuación:
 
 ```cpp
 
@@ -82,12 +82,12 @@ graph TD;
 		ejecuto_lo_que_esta_dentro_de_corchetes_del_else-->continuo_la_ejecucion;
 ```
 
-Esta sintaxis es la habitual sin embargo existen los conocidos como operadores
-ternarios que cumplen una funcion similar al if pero se usan en la asignacion
-de valores a una variable, antes de mostrar un ejemplo de esto se presentaran
-algunos de los operadores necesarios para construir expresiones logicas (una descripcion exhaustiva de los operadores disponibles para expresiones logicas puede ser consultado en [[2]](2) y  [[3]](3))
+Esta sintaxis es la habitual, sin embargo existen los conocidos como operadores
+ternarios que cumplen una función similar al if pero se usan en la asignación
+de valores a una variable, antes de mostrar un ejemplo de esto se presentarán
+algunos de los operadores necesarios para construir expresiones lógicas (una descripción exhaustiva de los operadores disponibles para expresiones lógicas puede ser consultado en [[2]](2) y  [[3]](3))
 
-### Operadores para expresiones logicas
+### Operadores para expresiones lógicas
 
 ```
 Igualdad
@@ -111,8 +111,8 @@ Negacion booleana
 
 ```
 
-A continuacion se presentan algunos ejemplos haciendo uso de
-los if:
+A continuación se presentan algunos ejemplos haciendo uso de
+los condicionales if:
 
 ```cpp
 // Las siguientes expresiones logicas son equivalentes
@@ -137,7 +137,7 @@ int main(){
 }
 
 ```
-El codigo anterior tendria la siguiente salida:
+El código anterior tendría la siguiente salida:
 
 ```bash
 Me ejecuto cuando flag es falso.
@@ -148,7 +148,7 @@ Me ejecuto cuando flag es falso.
 ### Operadores ternarios
 
 El operador ternario es similar al if/else anteriormente expuesto,
-a continuacion se presenta un ejemplo de su uso.
+a continuación se presenta un ejemplo de su uso.
 
 ```cpp
 #include <iostream>
@@ -163,18 +163,18 @@ int main(){
 }
 ```
 
-La salida del siguiente codigo seria la siguiente:
+La salida del siguiente código sería la siguiente:
 ```bash
 verdadero
 ```
-Como se aprecia en el ejemplo los casos de la condicional se separan
-por el caracter ':' y el codigo ejecutara la condicion de la izquierda
-si la condicion logica expuesta es verdadera, de otro modo se procedera
-con el codigo a la derecha.
+Como se aprecia en el ejemplo, los casos de la condicional se separan
+por el caracter ':' y el código ejecutará la condición de la izquierda
+si la condición lógica expuesta es verdadera, de otro modo se procederá
+con el código a la derecha.
 
 ## switch
 La estructura de control switch es utilizada cuando es necesario evaluar
-una lista de posibles casos como se muestra a continuacion:
+una lista de posibles casos como se muestra a continuación:
 ```cpp
 
 #include <iostream>
@@ -215,26 +215,26 @@ graph TD;
 
 ```
 Note en la sintaxis la presencia de la palabra ```break```
-esta interrumpe la ejecucion al llegar a esa linea en particular
+esta interrumpe la ejecución, al llegar a esa línea en particular
 del switch y sale de la ejecucion de los corchetes, esto es
-importante dado que de otro modo no importaria el valor de arg
-siempre se ejecutaria el caso ```default``` tambien se debe
+importante dado que de otro modo no importaría el valor de arg
+siempre se ejecutaría el caso ```default```, también se debe
 recalcar que si se hace uso de switch este debe incluir el
 caso default.
 
-# Estructuras de repeticion
-Las tres estructuras basicas de repeticion en cpp
-son el for, while y do while se empezara por el for.
+# Estructuras de repetición
+Las tres estructuras básicas de repetición en cpp
+son el for, while y do while se empezará por el for.
 ## for
-El for loop permite realizar la misma instruccion una cantidad n
+El for loop permite realizar la misma instrucción una cantidad n
 de veces, para esta estructura se cuenta con las siguientes variables
-que controlan el ```estado``` de la iteracion:
+que controlan el ```estado``` de la iteración:
 ```
-expresion inicial
-condicion de finalizacion
-expresion de actualizacion
+expresión inicial
+condición de finalización
+expresión de actualización
 ```
-A continuacion se presenta un ejemplo basico de esta estructura
+A continuación se presenta un ejemplo básico de esta estructura
 ```cpp
 
 #include <iostream>
@@ -252,7 +252,7 @@ int main(){
 }
 
 ```
-La salida de este codigo es la siguiente:
+La salida de este código es la siguiente:
 ```bash
 0
 1
@@ -262,8 +262,8 @@ La salida de este codigo es la siguiente:
 ```
 
 ## while
-El while posee una condicion logica que establece si se ejecuta o no,
-tome como ejemplo el siguiente codigo note que la condicion es que
+El while posee una condición lógica que establece si se ejecuta o no,
+tome como ejemplo el siguiente código, note que la condición es que
 conditionArg sea igual a 5.
 
 ```cpp
@@ -286,21 +286,21 @@ int main(){
 	return 0;
 }
 ```
-En este caso el codigo desplegara los numeros enteros del 0 al 6,
+En este caso el código desplegará los números enteros del 0 al 6,
 y cuando este llegue a 6 saldra del while para desplegar 4.
-Note que si el valor de i no incrementara despues de mostrar su valor
-actual el codigo seguiria ejecutandose sin parar, otro aspecto a tomar
-en cuenta es que los while son estructuras de repeticion dependientes
-de la condicion logica usada en el caso de que esta no sea cierta
-el codigo dentro de este no se ejecutara.
+Note que si el valor de i no incrementará despues de mostrar su valor
+actual el código seguiría ejecutandose sin parar, otro aspecto a tomar
+en cuenta es que los while son estructuras de repetición dependientes
+de la condición lógica usada en el caso de que esta no sea cierta
+el código dentro de este no se ejecutará.
 
 ## do while
 La estructura do while es usada cuando necesitamos al menos
-una ejecucion de las instrucciones y no sabemos si la condicion
-logica descrita se cumple o no. El do while ejecutara el codigo
-y despues de su primera ejecucion verificara el valor de verdad
-de la condicion, si este es verdadero continuara con otra iteracion
-hasta que su condicion sea falsa.
+una ejecución de las instrucciones y no sabemos si la condición
+lógica descrita se cumple o no. El do while ejecutará el código
+y después de su primera ejecución verificará el valor de verdad
+de la condición, si este es verdadero continuará con otra iteración
+hasta que su condición sea falsa.
 
 ```cpp
 
@@ -322,7 +322,7 @@ int main(){
 	return 0;
 }
 ```
-La salida del codigo seria la siguiente:
+La salida del código seria la siguiente:
 
 ```bash
 Evaluando condicion
@@ -340,10 +340,10 @@ Condicion cierta.
 
 # Comentarios finales.
 
-En esta seccion no se examino el comportamiento de
+En esta sección no se examino el comportamiento de
 palabras designadas del lenguaje cpp para interrumpir
-el comportamiento de las estructuras de repeticion,
-en particular ```continue``` y ```break``` se recomienda
+el comportamiento de las estructuras de repetición,
+en particular ```continue``` y ```break```, se recomienda
 al lector estudiar esto por su cuenta.
 
 # Referencias
