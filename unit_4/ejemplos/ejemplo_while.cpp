@@ -7,7 +7,7 @@ int main(){
 	// Dato a cambiar dentro del while
 	int i = 0;
 	while(conditionArg==5){
-		std::cout << iw << std::endl;
+		std::cout << i << std::endl;
 		i++;
 		if(i==6){
 			conditionArg--;
