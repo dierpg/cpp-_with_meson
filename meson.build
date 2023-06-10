@@ -12,15 +12,13 @@ cmake_opts = [
 
 # Directory variables
 common_dependencies_dir = meson.source_root() + '/builddir/common-dependencies'
-unit_4 = include_directories('unit_4')
-
 
 # Declare dependencies
 deps = []
 
 # options
 
-build_tests = get_option('build_tests')
+build_tests = get_option('build_tests_ho')
 
 # Testing suite
 if build_tests
@@ -29,5 +27,3 @@ if build_tests
 	gmock_dep = gtest_proj.get_variable('gmock_dep')
   subdir('tests')
 endif
-
-subdir('unit_4')

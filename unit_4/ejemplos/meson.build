@@ -1,4 +1,5 @@
-project('unit_4', 'cpp',
-  version : '0.1',
-  default_options : ['warning_level=3',
-										'cpp_std=c++17'])
+# Archivos a incluir en la compilacion
+example_src = files([
+	'',
+	''
+])
