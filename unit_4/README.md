@@ -344,7 +344,8 @@ En esta seccion no se examino el comportamiento de
 palabras designadas del lenguaje cpp para interrumpir
 el comportamiento de las estructuras de repeticion,
 en particular ```continue``` y ```break``` se recomienda
-al lector estudiar esto por su cuenta.
+al lector estudiar esto por su cuenta y
+revisar la carpeta de ejemplos.
 
 # Referencias
 
