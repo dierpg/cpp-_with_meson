@@ -8,8 +8,7 @@ namespace ejemplo {
 	int suma(int a, int b){
 		return a + b;
 	}
-
-	double suma(int a, int b){
+	float suma(float a, float b){
 		return a + b;
 	}
 }

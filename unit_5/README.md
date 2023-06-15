@@ -79,13 +79,33 @@ int suma(int a, int b){
 ```
 
 # Sobrecarga de funciones
+En el ejemplo anterior la funcion suma, posee dos
+argumentos. Note que el tipo de asignado a los
+argumentos es ```int``` es decir entero.
 
+Es decir en el caso de que se quiera realizar una
+suma con numeros no enteros, la funcion no se podria
+utilizar. A continuacion se define una suma para
+numeros usando el tipo float:
 
+```cpp
+float suma(float a, float b){
+	return a + b;
+}
+```
+En el archivo funciones de la carpeta librerias encontrara un
+archivo header que contiene dos definiciones para ```suma```,
+a esta capacidad de para definir dos objetos dentro del mismo
+namespace se le conoce como sobrecarga de funciones.
+Es importante recordar que se deben repetar los tipos de los
+argumentos es decir si se pasa por ejemplo un dato de tipo ```int```
+y otro de tipo ```double``` esto resultara en un error a la hora
+de compilar.
 
-
+# inline functions
 
 # Referencias
 
-
 <a id="1">[1]</a>
+
 A tour of c++, Second Edition Bjourne Stroustrup
