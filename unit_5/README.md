@@ -112,6 +112,11 @@ A continuacion se presenta un ejemplo:
     return;
 	}
 ```
+Se recomienda al lector revisar las diferencias
+entre ```inline``` y las funciones normales a
+nivel de ejecucion [[2]](2).
+
+# Funciones recursivas
 
 # Referencias
 
