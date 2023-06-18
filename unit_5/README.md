@@ -103,9 +103,20 @@ y otro de tipo ```double``` esto resultara en un error a la hora
 de compilar.
 
 # inline functions
+En c++ existen distintas formas de declarar funciones, se debe
+destacar lo que se conoce como ```inline functions```.
+A continuacion se presenta un ejemplo:
+```cpp
+	inline void inlineHelloWorld(){
+	  std::cout << "Hello inline!" << std::endl;
+    return;
+	}
+```
 
 # Referencias
 
 <a id="1">[1]</a>
-
 A tour of c++, Second Edition Bjourne Stroustrup
+
+<a id="2">[2]</a>
+https://en.cppreference.com/w/cpp/language/inline

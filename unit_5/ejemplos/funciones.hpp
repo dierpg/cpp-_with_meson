@@ -19,4 +19,5 @@ namespace ejemplo {
 		std::cout << "Hello inline!" << std::endl;
     return;
 	}
+
 }
