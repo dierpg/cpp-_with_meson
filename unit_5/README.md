@@ -118,6 +118,29 @@ nivel de ejecucion [[2]](2).
 
 # Funciones recursivas
 
+Una funcion recursiva esta definido usando la misma funcion
+como parte de su definicion, esto permite que se pueda replicar
+el comportamiento de los ciclos mediante el uso de funciones
+recursivas. Sin embargo estas normalmente no especifican el
+numero de veces que se ejecuta dicha funcion por ejemplo:
+
+```cpp
+int factorial(int n) {
+  if (n == 0 || n == 1) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+```
+Algunas de las ventajas sobre este estilo a la hora de programar
+es que el codigo recursivo puede resultar en menos lineas de codigo.
+Sin embargo esto no necesariamente es una ventaja, ya que esto depende
+de la aplicacion.
+
+Se recomienda al lector revisar [[3]](3).
+
+
 # Referencias
 
 <a id="1">[1]</a>
@@ -125,3 +148,7 @@ A tour of c++, Second Edition Bjourne Stroustrup
 
 <a id="2">[2]</a>
 https://en.cppreference.com/w/cpp/language/inline
+
+<a id="3">[3][/a]
+High-Level Synthesis Made Eazy, Benjamin Carrion Schaefer.
+Page 37.
