@@ -16,8 +16,12 @@ common_dependencies_dir = meson.source_root() + '/builddir/common-dependencies'
 # Declare dependencies
 deps = []
 
+# options
+
+build_tests = get_option('build_tests_ho')
+
 # Testing suite
-if get_option('build_tests')
+if build_tests
   gtest_proj = subproject('gtest')
   gtest_dep = gtest_proj.get_variable('gtest_dep')
 	gmock_dep = gtest_proj.get_variable('gmock_dep')
