@@ -1,26 +1,26 @@
 # Introduccion a las funciones
 
 Las funciones son un concepto fundamental para realizar tareas
-en cualquier lenguaje de programacion cpp no es excepcion. En
+en cualquier lenguaje de programación, cpp no es excepción. En
 este caso particular se deben mencionar algunos detalles, con
-el objetivo de hacer uso de esta caracteristica del lenguaje
+el objetivo de hacer uso de esta característica del lenguaje
 de manera efectiva.
 
-Por cuestiones de simplicidad se limitara a ver las funciones
+Por cuestiones de simplicidad se limitará a ver las funciones
 en esta unidad como funciones que devuelven datos y funciones
-que no devuelven datos, la razon detras de esto esta dada por
-caracteristicas que seran expuestas en la siguiente unidad
-(especificamente sobre el uso de memoria y referencias).
+que no devuelven datos, la razón detras de esto esta dada por
+características que serán expuestas en la siguiente unidad
+(especificamente sobre el uso de memoría y referencias).
 
 
 # Archivos de encabezado
 
 Al definir funciones en un archivo de encabezado
-(archivos con nomenclatura hpp, cc) es buena practica
+(archivos con nomenclatura hpp, cc) es buena práctica
 definir un ```alcance``` es decir sobre que ```namespace```
-esta definida esta funcion, esto es necesario para
+esta definida esta función, esto es necesario para
 evitar problemas a la hora de usar funciones con
-el mismo nombre, esto es necesario para lograr que
+el mismo nombre, es decir para lograr que
 el compilador distinga entre distintas funciones
 con el mismo nombre.
 
@@ -35,23 +35,23 @@ namespace ejemplo {
 ```
 
 En este caso las funciones definidas en ```ejemplo```
-tienen un alcance dentro de ese ```namespace```, en el
+tienen un alcance dentro de ese ```namespace```. En el
 caso de que se quiera hacer uso de funciones definidas
-en el se debe hacer uso de la siguiente sintaxis
+en el ```namespace``` se debe hacer uso de la siguiente sintaxis
 ```cpp
 
 ejemplo::funcion_a_llamar
 
 ```
-Esta notacion recibe el nombre de ```namespace scope``` [[1]](1).
+Esta notación recibe el nombre de ```namespace scope``` [[1]](1).
 
 
-# Sintaxis basica
+# Sintaxis básica
 
-La estructura para declarar una funcion en cpp
-es ```tipo de retorno``` ```nombre de funcion```
-```argumentos dentro de parentesis``` a
-continuacion se presenta un ejemplo de funcion
+La estructura para declarar una función en cpp
+es ```tipo de retorno``` ```nombre de función```
+```argumentos dentro de parentesis```. A
+continuacián se presenta un ejemplo de función
 que no retorna ningun valor.
 
 ```cpp
@@ -65,11 +65,11 @@ namespace ejemplo {
 }
 ```
 En este caso nuestro tipo de retorno es ```void```
-lo que quiere decir que la funcion no retorna ningun
-valor. Note que esta funcion no posee ningun argumento,
-a continuacion se presenta un ejemplo de una funcion que
+, lo que quiere decir que la función no retorna ningún
+valor. Note que esta función no posee ningún argumento.
+A continuación se presenta un ejemplo de una función que
 toma dos argumentos y retorna un argumento, asuma que la
-funcion anterior se encuentra en el ```namespace```
+función anterior se encuentra en el ```namespace```
 ejemplo:
 
 ```cpp
