@@ -1,4 +1,4 @@
-# Direcciones de memoria
+# Introduccion
 Durante la ejecucion de un programa, las variables
 declaradas se ubican en memoria, c++ posee una sintaxis
 especial para obtener la direccion en memoria que ocupa
