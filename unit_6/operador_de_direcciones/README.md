@@ -79,12 +79,15 @@ int main(){
 }
 ```
 La salida esperada es la siguiente:
-```bash
+```
 Referencia de foo: 0x559b9b7e51c9
 ```
-
-
-
+Note que antes del operador ```&``` estamos usando
+```cpp
+(void*)
+```
+para establecer la referencia como un puntero este es un tema que se tratara mas adelante
+en esta unidad, por ahora se recomienda al lector revisar el siguiente material [[3]](3).
 # Referencias
 
 <a id="1">[1]</a>
@@ -93,3 +96,6 @@ https://isocpp.org/wiki/faq/freestore-mgmt
 
 <a id="2">[2]</a>
 http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-resource
+
+<a id="3">[3]</a>
+https://cplusplus.com/doc/tutorial/typecasting/
