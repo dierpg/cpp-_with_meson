@@ -51,3 +51,26 @@ Valor de *p: 0
 Valor de *p: 1
 Valor final de var: 1
 ```
+Note que *p quiere decir el valor al que apunta la direccion de memoria,
+estamos usando p para con la sintaxis *p para cambiar el valor de var.
+
+# Funciones y punteros
+
+Para entender la utilidad de esto es necesario hacer uso de funciones,
+considere el siguiente ejemplo de dos funciones en ejemplo.hpp:
+
+```cpp
+int pasarPorValor(int arg){
+	arg += 2;
+	return arg;
+}
+
+void pasarPorReferencia(int* p){
+	*p += 2;
+}
+```
+Haremos uso de estas en el ejemplo 6.5:
+
+```cpp
+
+```
