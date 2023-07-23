@@ -8,5 +8,8 @@ namespace ejemplo {
 		p = 2;
 		return;
 	}
+	int referenciaInmutable(const int& a){
+		return 0;
+	}
 
 }
