@@ -90,7 +90,7 @@ Si se requiere compartir la informacion sin modificarla
 es buena practica hacer del argumento pasado por referencia
 una constante de la siguiente manera:
 ```cpp
-void pasarPorReferencia(const int& a){
-
-}
+	int referenciaInmutable(const int& a){
+		return 0;
+	}
 ```
