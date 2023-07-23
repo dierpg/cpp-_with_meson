@@ -85,3 +85,12 @@ comparta la direcccion de memoria de este argumento
 con su direccion en main, de esta forma los cambios
 en main se ven reflejados en la variable dentro main
 evitando una duplicacion de variables.
+
+Si se requiere compartir la informacion sin modificarla
+es buena practica hacer del argumento pasado por referencia
+una constante de la siguiente manera:
+```cpp
+void pasarPorReferencia(const int& a){
+
+}
+```
