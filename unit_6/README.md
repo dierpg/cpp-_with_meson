@@ -10,3 +10,6 @@ los temas.
 1. Operador de direcciones
 2. Funciones y memoria
 3. Punteros
+
+
+Los ejemplos pueden ser encontrados en la carpeta ejemplos de su respectiva seccion.
