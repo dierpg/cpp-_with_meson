@@ -13,7 +13,7 @@ presentaran algunos ejemplos.
 # Obteniendo la direccion de una variable
 
 Si se quiere saber la direccion de una variable
-se puede obtener de la siguiente manera en el ejemplo 6.1
+se puede obtener de la siguiente manera en el ejemplo_6.1
 
 ```cpp
 #include <iostream>
@@ -26,7 +26,7 @@ int main(){
 
 # Aspectos importantes de las direcciones.
 
-El siguiente codigo asigna valores a dos variables de tipo ```int``` en el ejemplo 6.2:
+El siguiente codigo asigna valores a dos variables de tipo ```int``` en el ejemplo_6.2:
 ```cpp
 #include <iostream>
 
@@ -67,7 +67,7 @@ puede ser consultada en [[1]](1) y [[2]](2).
 # Funciones
 
 Otro caso particular es el de las funciones estas tambien poseen direcciones sin embargo
-su sintaxis es un poco distinta, considere el ejemplo 6.3:
+su sintaxis es un poco distinta, considere el ejemplo_6.3:
 
 ```cpp
 #include "ejemplo.hpp"

@@ -11,5 +11,4 @@ los temas.
 2. Funciones y memoria
 3. Punteros
 
-
 Los ejemplos pueden ser encontrados en la carpeta ejemplos de su respectiva seccion.
